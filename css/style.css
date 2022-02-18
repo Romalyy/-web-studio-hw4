@@ -132,8 +132,8 @@ ul {
 .header-icon:focus {
   fill: #2196f3;
 }
-
-/* .link:hover .header-icon {
+/* 
+.link:hover .header-icon {
   color: #2196f3;
   fill: #2196f3;
 } */
@@ -145,6 +145,10 @@ ul {
 /* .socials-link:hover .team-icon,
 .team-icon:focus {
   fill: #ffffff;
+} */
+
+/* .icon-item:hover {
+  color: #2196f3;
 } */
 
 /* hero */
@@ -171,7 +175,7 @@ ul {
 
 .main-bg {
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4));
+  /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)); */
 
   background-image: url(../images/hero-background.jpg);
 
@@ -273,52 +277,19 @@ ul {
   margin-right: 0;
 }
 
-.icons-list-1::before {
-  content: "";
-  display: block;
-
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../icons/antenna\ 1.svg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+.features-icon {
+  fill: #000000;
 }
 
-.icons-list-2::before {
-  display: block;
-  content: "";
-
+.icons-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../icons/clock\ 1.svg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.icons-list-3::before {
-  display: block;
-  content: "";
-
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../icons/diagram\ 1.svg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.icons-list-4::before {
-  display: block;
-  content: "";
-
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../icons/astronaut\ 1.svg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* Actions */
@@ -504,6 +475,9 @@ ul {
 
 .client-item:hover,
 .client-item:focus {
+}
+
+.clients-icons {
 }
 
 /* Button */
