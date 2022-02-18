@@ -133,13 +133,31 @@ ul {
   fill: #2196f3;
 }
 
+/* .link:hover .header-icon {
+  color: #2196f3;
+  fill: #2196f3;
+} */
+
+.auth-link {
+  margin-left: 10px;
+}
+
+/* .socials-link:hover .team-icon,
+.team-icon:focus {
+  fill: #ffffff;
+} */
+
 /* hero */
+.hero-container {
+  max-width: 1600px;
+}
+
 .hero {
-  color: var(--white-color);
   letter-spacing: 0.06em;
   text-align: center;
 }
 .hero-title {
+  color: var(--white-color);
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -147,11 +165,20 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-align: center;
 }
 
 .main-bg {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4));
+
+  background-image: url(../images/hero-background.jpg);
+
+  /* height: 600px; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 0;
@@ -252,7 +279,7 @@ ul {
 
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../icons/feature-1.svg);
+  background-image: url(../icons/antenna\ 1.svg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +291,7 @@ ul {
 
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../icons/feature-2.svg);
+  background-image: url(../icons/clock\ 1.svg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -276,7 +303,7 @@ ul {
 
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../icons/feature-3.svg);
+  background-image: url(../icons/diagram\ 1.svg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,7 +315,7 @@ ul {
 
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../icons/feature-4.svg);
+  background-image: url(../icons/astronaut\ 1.svg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,6 +352,7 @@ ul {
 /* our team */
 .background {
   background-color: #f5f4fa;
+  margin-bottom: 119px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -410,6 +438,10 @@ ul {
   padding-top: 16px;
 }
 
+.socials-items:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-icon {
   fill: #afb1b8;
 }
@@ -417,6 +449,61 @@ ul {
 .socials-link:hover .team-icon,
 .team-icon:focus {
   fill: #ffffff;
+}
+
+/* Клиенты  */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.clients {
+  display: flex;
+  margin: 0;
+}
+
+.client-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  background-color: #f5f4fa;
+  fill: #afb1b8;
+}
+.client-item:hover,
+.client-item:focus {
+  fill: #2196f3;
+}
+
+.border {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.border:hover,
+.border:focus {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-item:hover,
+.client-item:focus {
 }
 
 /* Button */
@@ -457,6 +544,7 @@ ul {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: 94px;
 }
 
 .address .street {
@@ -501,29 +589,31 @@ ul {
 }
 
 .second-container {
-  /* padding-top: 72px; */
   margin-top: 12px;
   margin-left: 70px;
-  /* flex-direction: row;
-  align-items: baseline; */
+}
+
+.socials-items-footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 .icons-footer {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  /* justify-content: center; */
-  margin: 0;
 
-  padding-left: o;
-  /* padding-right: 32px;
-  padding-top: 16px;  */
+  margin: 0;
+  padding: 0;
 }
 
 .footer-item {
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .socials-link-footer {
@@ -615,8 +705,13 @@ ul {
 
 .buttons:hover,
 .buttons:focus {
+  cursor: pointer;
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .projects {
@@ -658,6 +753,15 @@ ul {
   margin-bottom: 0;
 }
 
+.flex-element:hover {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .information {
   padding: 20px 24px;
   background-color: #ffffff;
@@ -687,4 +791,11 @@ ul {
 .address .info:hover,
 .address .info:focus {
   color: var(--accent-color);
+}
+
+.secong-footer-bg {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 0;
 }
